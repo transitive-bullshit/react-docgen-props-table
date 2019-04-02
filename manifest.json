@@ -1,0 +1,8 @@
+{
+  "short_name": "react-docgen-props-table",
+  "name": "react-docgen-props-table",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
