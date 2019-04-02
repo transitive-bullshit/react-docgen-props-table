@@ -59,7 +59,6 @@
   "dependencies": {
     "capitalize": "^2.0.0",
     "classnames": "^2.2.6",
-    "facepaint": "^1.2.1",
     "lodash.get": "^4.4.2",
     "react-tooltip": "^3.10.0"
   }
