@@ -1,4 +1,4 @@
-# react-docgen-props-table
+# react-docgen-props-table ([demo](https://transitive-bullshit.github.io/react-docgen-props-table/))
 
 > Beautiful Props Table for React Docgen.
 
@@ -65,6 +65,10 @@ class Example extends Component {
   }
 }
 ```
+
+## Examples
+
+Check out the [demo](https://transitive-bullshit.github.io/react-docgen-props-table/) for live examples.
 
 ## License
 
