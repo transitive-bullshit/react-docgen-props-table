@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/react-docgen-props-table.svg)](https://www.npmjs.com/package/react-docgen-props-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+<p align="center">
+  <img alt="Example" src="https://cdn.rawgit.com/transitive-bullshit/react-docgen-props-table/master/example.png">
+</p>
+
 This is a standalone version of the (now deprecated) PropsTable component from [Docz](https://github.com/pedronauck/docz).
 
 ## Install
@@ -14,48 +18,13 @@ npm install --save react-docgen-props-table
 
 ## Usage
 
-Take this example React component.
+```jsx
+import React, { Component } from 'react'
 
-```js
-import { Component } from 'react'
-import PropTypes from 'prop-types'
+import PropsTable from 'react-docgen-props-table'
 
-/**
- * General component description.
- */
-export default class MyComponent extends Component {
-  static propTypes = {
-    /**
-     * Description foo.
-     */
-    foo: PropTypes.number.isRequired,
-
-    /**
-     * Description bar.
-     *
-     * - markdown list-item 1
-     * - markdown list-item 2
-     */
-    bar: PropTypes.string,
-
-    /**
-     * Description baz.
-     */
-    baz: PropTypes.bool
-  }
-
-  static defaultProps = {
-    bar: 'bar'
-  }
-
-  render: () => { }
-}
-```
-
-`react-docgen` generates the following JSON:
-
-```js
-{
+// this was generated via react-docgen
+const docgenInfo = {
   "description": "General component description.",
   "displayName": "MyComponent",
   "methods": [],
@@ -87,23 +56,11 @@ export default class MyComponent extends Component {
     }
   }
 }
-```
-
-You can now render this props table via:
-
-```jsx
-import React, { Component } from 'react'
-
-import PropsTable from 'react-docgen-props-table'
-
-const docgenInfo = '... from above ...'
 
 class Example extends Component {
   render () {
     return (
-      <PropsTable
-        props={docgenInfo.props}
-      />
+      <PropsTable props={docgenInfo.props} />
     )
   }
 }

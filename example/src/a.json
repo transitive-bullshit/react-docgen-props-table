@@ -60,7 +60,11 @@
         "name": "string"
       },
       "required": false,
-      "description": ""
+      "description": "",
+      "defaultValue": {
+        "value": "\"hello world\"",
+        "computed": false
+      }
     },
     "type": {
       "type": {
@@ -85,14 +89,22 @@
         ]
       },
       "required": false,
-      "description": ""
+      "description": "",
+      "defaultValue": {
+        "value": "INFO",
+        "computed": false
+      }
     },
     "open": {
       "type": {
         "name": "bool"
       },
       "required": false,
-      "description": ""
+      "description": "",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
     },
     "onClose": {
       "type": {
