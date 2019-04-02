@@ -22,10 +22,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "styled-components": "^4.2.0"
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -60,6 +58,7 @@
   ],
   "dependencies": {
     "capitalize": "^2.0.0",
+    "classnames": "^2.2.6",
     "facepaint": "^1.2.1",
     "lodash.get": "^4.4.2",
     "react-tooltip": "^3.10.0"

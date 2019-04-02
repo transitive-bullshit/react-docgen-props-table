@@ -1,19 +1,20 @@
 import React from 'react'
 import ReactTooltip from 'react-tooltip'
-import styled from 'styled-components'
-
-const Link = styled('a')`
-  text-decoration: none;
-  color: initial;
-`
+import styles from './styles.css'
 
 export const Tooltip = ({ text, children }) => {
   const id = JSON.stringify(text)
   return (
     <React.Fragment>
-      <Link data-tip data-for={id} href='#' onClick={ev => ev.preventDefault()}>
+      <a
+        className={styles.link}
+        data-tip
+        data-for={id}
+        href='#'
+        onClick={ev => ev.preventDefault()}
+      >
         {children}
-      </Link>
+      </a>
 
       <ReactTooltip id={id} effect='solid'>
         {text}
