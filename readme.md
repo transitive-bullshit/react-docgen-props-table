@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/react-docgen-props-table.svg)](https://www.npmjs.com/package/react-docgen-props-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <p align="center">
-  <img alt="Example" src="https://cdn.rawgit.com/transitive-bullshit/react-docgen-props-table/master/example.png">
+  <img alt="Example" src="https://raw.githubusercontent.com/transitive-bullshit/react-docgen-props-table/master/example.png">
 </p>
 
 This is a standalone version of the (now deprecated) PropsTable component from [Docz](https://github.com/pedronauck/docz).
