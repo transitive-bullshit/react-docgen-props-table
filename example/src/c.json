@@ -1,0 +1,33 @@
+{
+  "description": "",
+  "displayName": "MyComponent",
+  "methods": [],
+  "props": {
+    "foo": {
+      "type": {
+        "name": "arrayOf",
+        "value": {
+          "name": "shape",
+          "value": {
+            "bar": {
+              "name": "string",
+              "description": "Description bar",
+              "required": false
+            },
+            "baz": {
+              "name": "bool",
+              "description": "Description baz",
+              "required": false
+            }
+          }
+        }
+      },
+      "required": false,
+      "description": "Description foo.",
+      "defaultValue": {
+        "value": "[ {\n  bar: 'test bar',\n  baz: 'test baz'\n} ]",
+        "computed": false
+      }
+    }
+  }
+}

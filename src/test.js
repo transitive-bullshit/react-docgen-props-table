@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import PropsTable from '.'
 
-describe('ExampleComponent', () => {
+describe('PropsTable', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(PropsTable).toBeTruthy()
   })
 })

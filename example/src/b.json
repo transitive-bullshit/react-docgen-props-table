@@ -1,0 +1,102 @@
+{
+  "description": "",
+  "displayName": "Button",
+  "methods": [
+    {
+      "name": "onPress",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "onHideUnderlay",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "onShowUnderlay",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    }
+  ],
+  "props": {
+    "testID": {
+      "type": {
+        "name": "string"
+      },
+      "required": true,
+      "description": ""
+    },
+    "onActivated": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": ""
+    },
+    "type": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'primary'",
+            "computed": false
+          },
+          {
+            "value": "'secondary'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "'primary'",
+        "computed": false
+      }
+    },
+    "contentStyle": {
+      "type": {
+        "name": "object"
+      },
+      "required": false,
+      "description": ""
+    },
+    "children": {
+      "type": {
+        "name": "node"
+      },
+      "required": false,
+      "description": ""
+    },
+    "style": {
+      "type": {
+        "name": "custom",
+        "raw": "ViewPropTypes.style"
+      },
+      "required": false,
+      "description": ""
+    },
+    "disabled": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    }
+  },
+  "context": {
+    "theme": {
+      "type": {
+        "name": "custom",
+        "raw": "ThemePropType"
+      },
+      "required": false
+    }
+  }
+}

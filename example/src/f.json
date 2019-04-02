@@ -1,0 +1,32 @@
+{
+  "description": "General component description.",
+  "displayName": "MyComponent",
+  "methods": [],
+  "props": {
+    "foo": {
+      "type": {
+        "name": "number"
+      },
+      "required": true,
+      "description": "Description foo."
+    },
+    "bar": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Description bar.\n\n- markdown list-item 1\n- markdown list-item 2",
+      "defaultValue": {
+        "value": "'bar'",
+        "computed": false
+      }
+    },
+    "baz": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Description baz."
+    }
+  }
+}

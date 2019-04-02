@@ -1,0 +1,32 @@
+{
+  "description": "",
+  "displayName": "MyComponent",
+  "methods": [],
+  "props": {
+    "foo": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'red'",
+            "computed": false
+          },
+          {
+            "value": "\"blue\"",
+            "computed": false
+          },
+          {
+            "value": "'green'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": "Description foo.",
+      "defaultValue": {
+        "value": "'red'",
+        "computed": false
+      }
+    }
+  }
+}

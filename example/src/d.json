@@ -1,0 +1,26 @@
+{
+  "description": "",
+  "displayName": "MyComponent",
+  "methods": [],
+  "props": {
+    "foo": {
+      "type": {
+        "name": "union",
+        "value": [
+          {
+            "name": "number"
+          },
+          {
+            "name": "string"
+          }
+        ]
+      },
+      "required": false,
+      "description": "Description foo.",
+      "defaultValue": {
+        "value": "42",
+        "computed": false
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "description": "",
+  "displayName": "ToastMessage",
+  "methods": [
+    {
+      "name": "show",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "hide",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "getPlatfomSpecificContainerStyles",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "onCloseButtonPress",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "onStartShouldSetResponder",
+      "docblock": null,
+      "modifiers": [],
+      "params": [],
+      "returns": null
+    },
+    {
+      "name": "renderIcon",
+      "docblock": null,
+      "modifiers": [],
+      "params": [
+        {
+          "name": "type",
+          "type": null
+        },
+        {
+          "name": "iconStyle",
+          "type": null
+        }
+      ],
+      "returns": null
+    }
+  ],
+  "props": {
+    "text": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": ""
+    },
+    "type": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'INFO'",
+            "computed": false
+          },
+          {
+            "value": "'WARNING'",
+            "computed": false
+          },
+          {
+            "value": "'SUCCESS'",
+            "computed": false
+          },
+          {
+            "value": "'ERROR'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    },
+    "open": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    },
+    "onClose": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": ""
+    }
+  }
+}
