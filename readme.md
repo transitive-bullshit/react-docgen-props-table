@@ -8,7 +8,7 @@
   <img alt="Example" src="https://raw.githubusercontent.com/transitive-bullshit/react-docgen-props-table/master/example.png">
 </p>
 
-This is a standalone version of the (now deprecated) PropsTable component from [Docz](https://github.com/pedronauck/docz).
+This is a standalone version of the (now deprecated) `PropsTable` component from [Docz](https://github.com/pedronauck/docz).
 
 ## Install
 
