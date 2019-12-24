@@ -8,7 +8,7 @@
     "material-ui": "^0.20.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-docgen-props-table": "link:..",
+    "react-docgen-props-table": "file:..",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
     "react-tap-event-plugin": "^3.0.3"
