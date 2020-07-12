@@ -2,9 +2,14 @@ import React from 'react'
 import get from 'lodash.get'
 import capitalize from 'capitalize'
 
+
 import { humanize } from './humanize-prop'
 import { Table } from './components/Table'
 import { Tooltip } from './components/Tooltip'
+
+const MarkdownIt = require('markdown-it');
+const md = new MarkdownIt();
+
 
 const styles = {
   thead: {
@@ -51,6 +56,7 @@ export const PropsTable = ({ props, ...rest }) => {
   const Th = 'th'
   const Tbody = 'tbody'
   const Td = 'td'
+   
 
   return (
     <Table {...rest}>
@@ -77,15 +83,15 @@ export const PropsTable = ({ props, ...rest }) => {
             if (!prop.flowType && !prop.type) return null
             return (
               <Tr key={name}>
-                <Td>{name}</Td>
+                <Td style={{color: "rgb(17, 147, 154)"}} >{name}</Td>
                 <Td>{getPropType(prop, Tooltip)}</Td>
                 <Td>{String(prop.required)}</Td>
                 {!prop.defaultValue ? (
                   <Td>
-                    <em>-</em>
+                    <em></em>
                   </Td>
                 ) : (
-                  <Td>
+                  <Td style={{color: "rgb(236, 171, 32)"}}>
                     {prop.defaultValue.value === "''" ? (
                       <em>[Empty String]</em>
                     ) : (
@@ -95,8 +101,13 @@ export const PropsTable = ({ props, ...rest }) => {
                   </Td>
                 )}
                 {hasDescription && (
-                  <Td>{prop.description && prop.description}</Td>
+                  <Td> 
+                    <div>
+                      <div dangerouslySetInnerHTML={{__html: md.renderInline(prop.description)}} />
+                    </div>
+                  </Td>
                 )}
+                
               </Tr>
             )
           })}

@@ -60,6 +60,7 @@
     "capitalize": "^2.0.0",
     "classnames": "^2.2.6",
     "lodash.get": "^4.4.2",
+    "markdown-it": "^10.0.0",
     "react-tooltip": "^3.10.0"
   }
 }
